@@ -53,8 +53,8 @@ If you discover any security related issues, please email [stephen@rees-carter.n
 
 ## Change log
 
-### v1.0.0 - Initial Release (UNRELEASED)
+### 2016-04-19 - v1.0.0 - Initial Release
 
-- Payment Status API check supported.
+**Added**
 
-
+- Payment Status API check.
