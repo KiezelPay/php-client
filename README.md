@@ -53,6 +53,12 @@ If you discover any security related issues, please email [stephen@rees-carter.n
 
 ## Change log
 
+### 2016-04-19 - v1.0.1
+
+**Fixes**
+
+- Bugfix: Guzzle v6 doesn't support `->json()`.
+
 ### 2016-04-19 - v1.0.0 - Initial Release
 
 **Added**
