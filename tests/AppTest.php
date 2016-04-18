@@ -19,7 +19,7 @@ class AppTest extends \PHPUnit_Framework_TestCase
         $code = 97531;
 
         $response = \Mockery::mock(\GuzzleHttp\Message\ResponseInterface::class);
-        $response->shouldReceive('json')->once()->andReturn(['paymentCode' => $code]);
+        $response->shouldReceive('getBody')->once()->andReturn(json_encode(['paymentCode' => $code]));
 
         $http = \Mockery::mock(\GuzzleHttp\Client::class);
         $http->shouldReceive('get')->with(

@@ -46,9 +46,9 @@ class App
             'rand'         => mt_rand(),
         ];
 
-        $response = $this->httpClient->get($this->domain.'/api/v1/status', ['query' => $parameters])->json();
+        $response = $this->httpClient->get($this->domain.'/api/v1/status', ['query' => $parameters]);
 
-        return new Responses\Status($response);
+        return new Responses\Status(json_decode($response->getBody(), true));
     }
 
     /**
