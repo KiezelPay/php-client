@@ -1,0 +1,28 @@
+{
+    "name": "kiezelpay/client",
+    "description": "API Client for the KiezelPay Pebble app payment system.",
+    "homepage": "https://kiezelpay.com/",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Stephen Rees-Carter",
+            "email": "stephen@rees-carter.net"
+        }
+    ],
+    "require": {
+        "php" : "~5.5|~7.0",
+        "guzzlehttp/guzzle": "^5.2|^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "KiezelPay\\Client\\": "src/"
+        }
+    },
+    "suggest": {
+        "valorin/pinpusher": "Provides an easy way to send Pebble Timeline pins from your application."
+    }
+}
