@@ -18,7 +18,7 @@ $ composer require kiezelpay/client
 $app = new KiezelPay\Client\App($appId);
 
 // Check payment status for specified user and device
-$status = $app->status($pebbleAccount, $deviceId);
+$status = $app->status($accountToken, $deviceId);
 
 // User is licensed
 if ($status->isLicensed()) {
